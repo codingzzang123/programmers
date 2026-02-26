@@ -7,12 +7,13 @@ public class Q2 {
         int h = (int) Math.ceil((double) n/w);
 
         // 꺼내려는 상자의 세로축 위치
-        int floor = 1;
-        while (floor < h) {
-            if(num <= floor * w)
-                break;
-            floor++;
-        }
+//        int floor = 1;
+//        while (floor < h) {
+//            if(num <= floor * w)
+//                break;
+//            floor++;
+//        }
+        int floor = (num - 1)/w +1;
         int answer = h - floor + 1;
 
         // 상자가 위치한 가로의 위치 정보 index (1부터 시작) 1<= col_index <= w
